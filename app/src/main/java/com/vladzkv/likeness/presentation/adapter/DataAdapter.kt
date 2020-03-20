@@ -29,7 +29,12 @@ class DataAdapter : RecyclerView.Adapter<DataAdapter.ViewHolder>() {
         TODO("Not yet implemented")
     }
 
-    inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    override fun onViewAttachedToWindow(holder: ViewHolder) {
+        holder.itemView.setOnClickListener { callback.onClickItem(array[holder.adapterPosition]) }
+        super.onViewAttachedToWindow(holder)
+    }
+    
+    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind() {
             TODO("Not yet implemented")
         }
