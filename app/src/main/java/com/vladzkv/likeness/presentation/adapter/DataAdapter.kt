@@ -12,7 +12,7 @@ import com.vladzkv.likeness.domain.entity.ProjectEntity
 class DataAdapter : RecyclerView.Adapter<DataAdapter.ViewHolder>() {
 
     private val array: MutableList<ProjectEntity> = mutableListOf()
-    lateinit var callback: OnItemClick
+    lateinit var callback: onClickItem
 
     fun attachData(newValues: Collection<ProjectEntity>) {
         array.addAllAndClear(newValues = newValues)
@@ -33,7 +33,7 @@ class DataAdapter : RecyclerView.Adapter<DataAdapter.ViewHolder>() {
         holder.itemView.setOnClickListener { callback.onClickItem(array[holder.adapterPosition]) }
         super.onViewAttachedToWindow(holder)
     }
-    
+
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind() {
             TODO("Not yet implemented")

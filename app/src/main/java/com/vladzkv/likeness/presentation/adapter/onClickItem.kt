@@ -5,6 +5,6 @@ import com.vladzkv.likeness.domain.entity.ProjectEntity
 /**
  * Created by kirill on 20.03.2020.
  */
-interface OnItemClick {
+interface onClickItem {
     fun onClickItem(item: ProjectEntity)
 }
