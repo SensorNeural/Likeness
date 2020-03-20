@@ -1,4 +1,4 @@
-package com.vladzkv.likeness.domain.utils
+package com.vladzkv.likeness.domain
 
 /**
  * File for Constants and util functions
