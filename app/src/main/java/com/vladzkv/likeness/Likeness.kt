@@ -16,6 +16,4 @@ class Likeness : Application() {
         super.onCreate()
         instance = this
     }
-
-
 }
