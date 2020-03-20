@@ -49,6 +49,7 @@ dependencies {
     implementation 'com.android.support:recyclerview-v7:29.0.0'
 
     // mvp
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     kapt "com.github.moxy-community:moxy-compiler:$moxy_version"
     implementation "com.github.moxy-community:moxy:$moxy_version"
     implementation "com.github.moxy-community:moxy-androidx:$moxy_version"
