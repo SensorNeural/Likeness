@@ -19,4 +19,6 @@ class MainFragmentPresenter : MvpPresenter<MainView>() {
 
     private fun setupGalleryView() {
     }
+
+//    славетный заебал чорт блять
 }
