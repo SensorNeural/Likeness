@@ -12,7 +12,7 @@ import com.vladzkv.likeness.domain.entity.ProjectEntity
 class DataAdapter : RecyclerView.Adapter<DataAdapter.ViewHolder>() {
 
     private val array: MutableList<ProjectEntity> = mutableListOf()
-    lateinit var callback: onClickItem
+    lateinit var callback: OnClickItem
 
     fun attachData(newValues: Collection<ProjectEntity>) {
         array.addAllAndClear(newValues = newValues)
