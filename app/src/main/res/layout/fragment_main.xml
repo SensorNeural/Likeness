@@ -6,7 +6,6 @@
     android:background="#DC3131"
     tools:context=".presentation.ui.fragment.main.MainFragment">
 
-    <!--    заглушка ебаная для пустого ресайклера-->
     <LinearLayout
         android:id="@+id/placeHolder"
         android:layout_width="wrap_content"
